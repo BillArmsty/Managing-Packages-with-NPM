@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <script>
+    function updateDisplay(number) {
+      let display = document.getElementById("display");
+     if (display.innerHTML === "0") {
+      display.innerHTML = number;
+     } else {
+      display.innerHTML += number;
+     }
+    }
+
+    function clearDisplay() {
+      let display = document.getElementById("display");
+      display.innerHTML = 0;
+
+    }
+
+  </script>
+
+
+  <body>
+
+         <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col">
+            <h1>JavaScript Calculator</h1>
+            </div>
+          </div>  
+        
+          <div class="row text-center">
+            <div class="col">
+            <div id="display" class="bg-info text-white my-3 py-5"></div>
+          </div>
+          </div>  
+          
+          <div class="row text-center">
+            <div class="col-4">
+              <a id="zero" class="btn btn-block btn-primary" onclick="updateDisplay(0)">0</a>
+              <a id="one" class="btn btn-block btn-primary" onclick="updateDisplay(1)">1</a>
+              <a id="two" class="btn btn-block btn-primary" onclick="updateDisplay(2)">2</a>
+              <a id="equals" class="btn btn-block btn-block btn-primary">=</a>
+            </div>
+          </div>
+          <div class="row text-center">
+           <div class="col-4">
+            <a id="three" class="btn btn-primary" onclick="updateDisplay(3)">3</a>
+            <a id="four" class="btn  btn-primary" onclick="updateDisplay(4)">4</a>
+            <a id="five" class="btn btn-primary" onclick="updateDisplay(5)">5</a>
+            <a id="clear" class="btn btn-block btn-warning" onclick="clearDisplay()">clear</a>
+           </div>
+          </div>
+          <div class="row text-center">
+           <div class="col-4">
+            <a id="six" class="btn btn-primary" onclick="updateDisplay(6)">6</a>
+            <a id="seven" class="btn btn-primary" onclick="updateDisplay(7)">7</a>
+            <a id="eight" class="btn  btn-primary" onclick="updateDisplay(8)">8</a>
+            <a id="nine" class="btn  btn-primary" onclick="updateDisplay(9)">9</a>
+           </div>
+          </div>
+         
+          <div class="row text-center">
+            <div class="col-4">
+            
+            
+            
+            </div>
+          </div>
+           
+           
+           
+          
+
+           <a id="add" class="btn btn-block btn-secondary">+</a>
+           <a id="subtract" class="btn btn-block btn-secondary">-</a>
+           <a id="multiply" class="btn btn-block btn-secondary">*</a>
+           <a id="divide" class="btn btn-block btn-secondary">/</a>
+           <a id="decimal" class="btn btn-block btn-secondary">.</a>
+           
+        </div>
+         
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
