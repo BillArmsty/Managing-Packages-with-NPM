@@ -2,15 +2,7 @@
 
   <meta charset="UTF-8">
   
-<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-<meta name="apple-mobile-web-app-title" content="CodePen">
-
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-
-
-  <title>CodePen - FCC: 25 + 5 Clock</title>
+ <title>25 + 5 Clock</title>
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Righteous" rel="stylesheet">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -122,31 +114,10 @@ body #container .timer .timer-control button:active {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
       <script id="rendered-js">
-/* global React, ReactDOM */
-/* eslint-disable react/no-multi-comp, react/prop-types, max-len */
-// coded by @no-stack-dub-sack (github) / @no_stack_sub_sack (codepen)
 
-/** NOTES:
-/** Dependencies are React, ReactDOM, and
-    Accurate_Interval.js by Squuege (external script
-    to keep setInterval() from drifting over time &
-    thus ensuring timer goes off at correct mark).
-/** Utilizes embedded <Audio> tag to ensure audio
-    plays when timer tab is inactive or browser is
-    minimized ( rather than new Audio().play() ).
-/** Audio of this fashion not supported on most
-    mobile devices it would seem (bummer I know).
-**/
-
-// PROJECTOR SELECTOR FOR EXTERNAL TEST SCRIPT:
-// eslint-disable-next-line no-unused-vars
 const projectName = '25-5-clock';
 
-// Accurate_Interval.js
-// Thanks Squeege! For the elegant answer provided to this question:
-// http://stackoverflow.com/questions/8173580/setinterval-timing-slowly-drifts-away-from-staying-accurate
-// Github: https://gist.github.com/Squeegy/1d99b3cd81d610ac7351
-// Slightly modified to accept 'normal' interval/timeout format (func, time).
+
 
 const accurateInterval = function (fn, time) {
   var cancel, nextAt, timeout, wrapper;
@@ -377,10 +348,7 @@ class Timer extends React.Component {
       React.createElement("i", { className: "fa fa-refresh fa-2x" }))), /*#__PURE__*/
 
 
-      React.createElement("div", { className: "author" },
-      ' ', "Designed and Coded by ", /*#__PURE__*/
-      React.createElement("br", null), /*#__PURE__*/
-      React.createElement("a", { href: "https://goo.gl/6NNLMG", target: "_blank" }, "Peter Weinberg")), /*#__PURE__*/
+     
 
 
 
